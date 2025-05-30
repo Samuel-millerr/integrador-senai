@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 120rem;
+    height: 43rem;
+    background-color: #DFE6E9;
+    color: #2D3436;
+}
+
+nav {
+    width: 120rem;
+    height: 8rem;    
+    background-color: #2D3436;
+}
+
+.titleHeader {
+    font-size: 3rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.textBanner {
+    font-size: 1.75rem;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.button {
+    max-width: 12rem;
+    max-height: 10rem;
+    border-radius: 0.5rem;
+    background-color: #354D5C;
+    color: #FBFAF8;
+}
+.button p {
+    font-size: 1.625rem;
+}
+
+.subTextBanner {
+    font-size: 1,25rem;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
