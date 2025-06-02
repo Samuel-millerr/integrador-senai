@@ -19,31 +19,73 @@ nav {
     background-color: #2D3436;
 }
 
-.titleHeader {
-    font-size: 3rem;
+.titleBanner {
+    font-size: 52px;
     font-family: "Montserrat";
     font-weight: 600;
+    max-width: 35%;
 }
 
 .textBanner {
-    font-size: 1.75rem;
+    font-size: 28px;
     font-family: "Montserrat";
     font-weight: 400;
+    max-width: 20%;
 }
 
 .button {
-    max-width: 12rem;
-    max-height: 10rem;
+    padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+    max-width: 355px;
+    max-height: 55px;
     border-radius: 0.5rem;
     background-color: #354D5C;
     color: #FBFAF8;
 }
+
 .button p {
-    font-size: 1.625rem;
+    font-size: 26px;
+    font-family: "Montserrat";
 }
 
 .subTextBanner {
-    font-size: 1,25rem;
+    font-size: 20px;
     font-family: "Montserrat";
     font-weight: 300;
+}
+
+
+.titlePrimary {
+    margin-top: 4.5rem;
+    font-size: 48px;
+    font-family: "Montserrat";
+    color: #2D3436;
+}
+
+.productLine {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bigProductCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    width: 27rem;
+    height: 42rem;
+    color: #354D5C;
+    background-color: #DFE6E9;
+    font-size: 26px;
+    box-shadow: inset 0 0 6px #2D3436;
+}
+
+.bigProductCard img {
+    max-width: 29rem;
+    max-height: 29rem;
+}
+
+.bigProductCard figcaption {
+    font-family: "Montserrat";
 }
