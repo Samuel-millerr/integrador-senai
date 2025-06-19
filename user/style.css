@@ -1,51 +1,402 @@
+/* Predefinções Globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav {
-    width: 100%;
-    height: 8rem;    
-    background-color: #2D3436;
+:root {
+    --primaria:#2D3436;
+    --secundaria:#DFE6E9;
+    --terciaria:#FBFAF8;
+    --destaque01:#354D5C;
+    --destaque02:#DFF5FF;
+    --destaque03: #FFFFFF;
+    --destaque04: #000000;
 }
 
-header {
-    width: 100%;
-    height: 43rem;
-    background-color: #DFE6E9;
-    color: #2D3436;
-}
-
-.firstBanner {
-    width: 100%;
-    height: 57rem;
-}
-
-.secondBanner {
+/* Botões */
+.primaryButton {
     display: flex;
-    flex-direction: row;
     align-items: center;
-}
-
-.titleHeader {
-    font-size: 52px;
+    justify-content: center;
+    width: 22.5rem;
+    height: 3.5rem;
+    padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--destaque01);
+    color: var(--destaque03);
+    font-size: 26px;
     font-family: "Montserrat";
     font-weight: 600;
-    max-width: 35%;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 2px var(--destaque04));
+    cursor: pointer;
 }
 
-.titleBanner {
-    margin-top: 4.5rem;
+.primaryButton:hover {
+    background-color: var(--primaria);
+}
+
+/* Textos */
+.titleHome {
     font-size: 48px;
     font-family: "Montserrat";
-    color: #2D3436;
+    color: var(--primaria);
 }
 
-.textHeaderBanner {
+.textHome {
     font-size: 28px;
     font-family: "Montserrat";
     font-weight: 400;
+}
+
+.subTextHome {
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+
+/* Aba de Navegação */
+.navBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    height: 8rem;    
+    background-color: var(--primaria);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    padding: 0.2rem;
+    margin: 0;
+}
+
+.searchBar {
+    display: flex;
+    width: 35rem;
+    height: 2.7rem;
+}
+
+.searchBar input {
+    width: 100%;
+    height: 3rem;
+    padding: 0.9rem;
+    border-radius: 0.2rem 0 0 0.2rem;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: "Montserrat";
+}
+
+.searchBar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3rem;
+    background-color: var(--secundaria);
+    cursor: pointer;
+    border-radius: 0 0.2rem 0.2rem 0;
+    border: none;
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navIcons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 16px;
+    color: var(--destaque03);
+    font-family: "Montserrat";
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navIcons a img {
+    width: 3.5rem; 
+    height: 3.5rem;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    width: 100%;
+    height: 50rem;
+    background-color: var(--primaria);
+}
+
+.line {
+    opacity: 25%;
+    width: 85%;
+    height: 1px;
+    border: none;
+    background-color: var(--terciaria);
+}
+
+.newsLetter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--terciaria);
+    font-family: "Montserrat";
+    text-align: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.newsLetter h3 {
+    font-size: 30px;
+}
+
+.newsLetter p {
+    max-width: 80%;
+    font-size: 20px;
+}
+
+.formNewsLetter {
+    position: relative;
+    width: 27rem;
+    height: 4rem;
+}
+
+.formNewsLetter input {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-family: "Montserrat";
+}
+
+.formNewsLetter a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--destaque01);
+    top: 50%;
+    right: 1rem; 
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.formNewsLetter a:hover {
+    background-color: var(--primaria);
+}
+
+
+.linksFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+    gap: 12rem;
+    font-family: "Montserrat";
+}
+
+.links h4 { 
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: var(--terciaria);
+    font-weight: 600;
+}
+
+.productsLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style-type: none;
+}
+
+.links a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--terciaria);
+}
+
+.links a:hover {
+    color: var(--destaque02);
+    text-decoration: underline;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+.copyright ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.copyright a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--terciaria);
+    transition: 1s;
+}
+
+.copyright li {
+    transition: 1s;
+}
+
+.copyright li:hover {
+    transform: scale(1.03);
+}
+
+.copyright p {
+    font-size: 17px;
+    color: var(--terciaria);
+}
+
+/* TELA HOME */
+/* Header */
+.mainHeader {
+    width: 100%;
+}
+
+.firstBanner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48rem;
+    background-color: var(--secundaria);
+    color: var(--primaria);
+    
+}
+
+.firstBanner .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 4rem 0rem 4rem 4rem;
+    gap: 20rem;
+}
+
+.firstBanner .conteiner div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.titleFirstBanner {
+    font-size: 52px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    max-width: 70%;
+}
+
+/* Seção Top Acordes */
+.topAcordes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.productLine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.bigProductCard {
+    width: 27rem;
+    height: 42rem;
+    border-radius: 2px;
+    background-color: var(--secundaria);
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: inset 0 0 12px var(--primaria);
+}
+
+.bigProductCard:hover {
+    transform: translateY(-5px);
+}
+
+.bigProductCard figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 27rem;
+    height: 42rem;
+    gap: 1rem;
+}
+
+.bigProductCard img {
+    align-self: center;
+    max-width: 48%;
+    max-height: auto;
+}
+
+.bigProductCard h3 {
+    padding: 1.5rem;
+    font-family: "Montserrat";
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--destaque01);
+}
+
+
+/* Seção Trilha de Inverno */
+.secondBanner {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.secondBanner article {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 1rem;
 }
 
 .textSecondBanner {
@@ -55,102 +406,217 @@ header {
     max-width: 85%;
 }
 
-.subTextBanner {
-    font-size: 20px;
-    font-family: "Montserrat";
-    font-weight: 300;
-}
-
-.button {
-    padding: 0.5rem 4.5rem 0.5rem 4.5rem;
-    max-width: 355px;
-    max-height: 55px;
-    border-radius: 0.5rem;
-    background-color: #354D5C;
-    color: #FBFAF8;
-    font-size: 26px;
-    font-family: "Montserrat";
-}
-
-.productLine {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.bigProductCard {
-    border-radius: 2px;
-    width: 27rem;
-    height: 42rem;
-    background-color: #DFE6E9;
-}
-
-.bigProductCard figure {
+/* Categorias */
+.category {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    box-shadow: inset 0 0 6px #2D3436;
-    width: 27rem;
-    height: 42rem;
+    margin-top: 2rem;
+    padding: 3rem;
+    gap: 1rem;
 }
-
-.bigProductCard img {
-    align-self: center;
-    padding-bottom: 4rem;
-    max-width: 33rem;
-    max-height: 33rem;
-}
-
-.bigProductCard figcaption {
-    padding: 1rem;
-    font-family: "Montserrat";
-    color: #354D5C;
-    font-size: 26px;
-}
-
 
 .categoryLine {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
 }
 
-.categoryLine figure {
-    display: inline-block;
-    position: relative;
-    background-color: #2D3436;
-    max-width: 325px;
-    max-height: 700px;
-    border-radius: 25px;    
-}
 
-.categoryLine figure {
-    max-width: 334px;
-    max-height: 700px;
-}
-
-.categoryLine img{
-    max-width: 325px;
-    max-height: 700px;
-    border-radius: 25px;
+.categoryLine a {
+    max-width: 90%;
+    background-color: var(--primaria);
+    border-radius: 1.5rem;
     transition: 1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.categoryLine a:hover {
+    transform: scale(1.03);
+}
+
+
+.categoryLine img {
+    max-width: 100%;
     opacity: 55%;
+    border-radius: 1.5rem;
 }
 
-.categoryLine img:hover {
-    max-width: 334px;
-    max-height: 700px;
-}
-
-.categoryLine figcaption {
+.categoryLine h3 {
     position: absolute;
     top: 50%;
-    transform: rotate(270deg);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    z-index: 1;
+    color: var(--destaque03);
     font-size: 52px;
     font-family: "Montserrat";
-    color: #FBFAF8;
-    width: 500;
+    font-weight: 500;
+}
 
+/* Sobre a Virtuose */
+.aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    height: 54rem;
+    background: url('src/telaHome/aboutUs.png'); 
+    color: var(--terciaria);
+}
+
+.aboutUs article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 58.5rem;
+    height: 35rem;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: var(--primaria);
+}
+
+.titleAboutUs {
+    font-size: 48px;
+    font-family: "Montserrat";
+    text-align: center;
+    max-width: 60%;
+}
+
+.textAboutUs {
+    font-size: 28px;
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: 400;
+    max-width: 70%;
+}
+
+.buttonAboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22.5rem;
+    height: 3.5rem;
+    padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--destaque02);
+    color: var(--primaria);
+    font-size: 26px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 2px var(--destaque03));
+    cursor: pointer;
+}
+
+.buttonAboutUs:hover {
+    background-color: var(--secundaria);
+}
+
+/* Vantagens */
+.advantages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 3rem;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.advantage p {
+    max-width: 40%;
+    color: var(--primaria);
+    font-family: "Montserrat";
+    font-size: 20px;
+    text-align: center;
+}
+
+/* TELA DE PRODUTOS */
+.firstSectionProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat";
+    gap: 1rem;
+}
+
+.gapLine {
+    opacity: 75%;
+    width: 75%;
+    height: 1px;
+    border: none;
+    background-color: var(--primaria);
+}
+
+.breadCrumb {
+    align-self: baseline;
+    padding: 1rem 0;
+    font-size: 18px;
+    color: var(--primaria);
+}
+
+.breadCrumb ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+}
+
+.sectionTitle {
+    font-size: 44px;
+    font-weight: bold;
+    color: var(--destaque01);
+}
+
+.productSection {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 2rem;
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    background-color: var(--secundaria);
+    border: 1px solid var(--destaque01);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: start;
+    color: var(--destaque01);
+    box-shadow: inset 0.2rem 0.2rem 15px 0px var(--destaque04);
+}
+
+.productImage {
+    max-width: 100%;
+    height: 13rem;
+    margin-bottom: 20px;
+}
+
+.productName {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.productPrice {
+    font-size: 20px;
+    font-weight: bold;
 }
