@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Virtuose - Carrinho </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class = "mainHeader">
+            <!-- Aba de Navegação -->
+            <nav class="navBar">
+                <ul class="conteiner">
+                    <li><a href="homePage.html"><img src="icons/logo.svg" class="logo" alt="Logo"/></a></li>               
+                    <li>
+                        <form class="searchBar"> 
+                            <input type="search" placeholder="Procurar"/>
+                            <a><img src="icons/navBarIcons/searchIcon.svg" alt="Ícone de pesquisa"></a>
+                        </form>
+                    </li>
+                    <li>
+                        <ul class="navIcons">
+                            <li><a href=""><img src="icons/navBarIcons/infoIcon.svg" alt="Ícone de informação"/> Sobre Nós </a></li>
+                            <li><a href="products.html"><img src="icons/navBarIcons/productsIcon.svg" alt="Ícone de produtos"/> Produtos </a></li>
+                            <li><a href="cart.html"><img src="icons/navBarIcons/cartIcon.svg" alt="Ícone de carrinho"/> Carrinho </a></li>
+                            <li><a href="login.html"><img src="icons/navBarIcons/perfilIcon.svg" alt="Ícone de perfil"/> Sua conta </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="mainCart">
+            <section class="shoppingCart">
+                <h2 class="titlePages"> Carrinho de Compras </h2>
+                <article class="cartItem">
+                    <figure class="conteinerImage">
+                        <img src="src/telaHome/violao01.png" class="productImageCart"/>
+                    </figure>
+                    <article class="itemDetails">
+                        <div class="articlesHeader">
+                            <h3 class="itemInfo"> Vilão Acustico California Vintage </h3>
+                            <p class="itemInfo"> R$ 867,90 </p>
+                        </div>
+                        <div class="itemControls">
+                            <ul class="qtdSelector">
+                                <li> <button> - </button> </li>
+                                <li> <p> 1 </p> </li>
+                                <li> <button> + </button> </li>
+                            </ul>
+                            <ul class="itemActions">
+                                <li> <a href="#"> Excluir</a> </li>
+                                <li> <a href="#"> Favoritar </a> </li>
+                            </ul>
+                        </div>
+                    </article> 
+                </article>
+                <article class="cartItem">
+                    <figure class="conteinerImage">
+                        <img src="src/telaHome/violao01.png" class="productImageCart"/>
+                    </figure>
+                    <article class="itemDetails">
+                        <div class="articlesHeader">
+                            <h3 class="itemInfo"> Baixo American Ultra II </h3>
+                            <p class="itemInfo"> R$ 1.090,90 </p>
+                        </div>
+                        <div class="itemControls">
+                            <ul class="qtdSelector">
+                                <li> <button> - </button> </li>
+                                <li> <p> 1 </p> </li>
+                                <li> <button> + </button> </li>
+                            </ul>
+                            <ul class="itemActions">
+                                <li> <a href="#"> Excluir</a> </li>
+                                <li> <a href="#"> Favoritar </a> </li>
+                            </ul>
+                        </div>
+                    </article> 
+                </article>              
+                <article class="cartItem">
+                    <figure class="conteinerImage">
+                        <img src="src/telaHome/violao01.png" class="productImageCart"/>
+                    </figure>
+                    <article class="itemDetails">
+                        <div class="articlesHeader">
+                            <h3 class="itemInfo"> Ukulele Soprano Venice </h3>
+                            <p class="itemInfo"> R$ 587,00 </p>
+                        </div>
+                        <div class="itemControls">
+                            <ul class="qtdSelector">
+                                <li> <button> - </button> </li>
+                                <li> <p> 2 </p> </li>
+                                <li> <button> + </button> </li>
+                            </ul>
+                            <ul class="itemActions">
+                                <li> <a href="#"> Excluir</a> </li>
+                                <li> <a href="#"> Favoritar </a> </li>
+                            </ul>
+                        </div>
+                    </article> 
+                </article>
+                </article>
+            </section>
+
+            <aside class="orderSummary">
+                <h3 class="titlePages"> Resumo da Compra </h3>
+                <hr class="gapLine"/> 
+                <div class="articlesHeader">
+                    <h3> Subtotal </h3>
+                    <p class="subtotalPrice"> R$ 2.632,80 </p>
+                </div>
+                <a href="checkOut.html" class="primaryButton"> Fechar Pedido </a>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class = "linksFooter"> <!-- "div" utilizada para definir e delimitar o espaço dos links no footer -->
+                <article class = "links">
+                    <h4> Produtos </h4>
+                    <div class = "productsLinks"> <!-- "div" utilizada para separar a lista em dois espaços diferentes-->
+                        <div> <!-- "div" usada para alinhamento -->
+                            <ul>
+                                <li><a href="#"> Violões </a></li>
+                                <li><a href="#"> Guitarras </a></li>
+                                <li><a href="#"> Baixos </a></li>
+                                <li><a href="#"> Ukuleles </a></li>
+                            </ul>
+                        </div>
+                        <div> <!-- "div" usada para alinhamento -->
+                            <ul>    
+                                <li><a href="#"> Baterias </a></li>
+                                <li><a href="#"> Violinos </a></li>
+                                <li><a href="#"> Teclados </a></li>
+                                <li><a href="#"> Acessórios </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class = "links">
+                    <h4> Institucional </h4>
+                    <ul>
+                        <li><a href="#"> Sobre nós </a></li>
+                        <li><a href="#"> Fale conosco </a></li>
+                        <li><a href="#"> Dúvidas </a></li>
+                        <li><a href="#"> Politica de privacidade </a></li>
+                    </ul>
+                </article>
+                <article class = "links">
+                    <h4> Conta </h4>
+                    <ul>
+                        <li><a href="#"> Minha conta </a></li>
+                        <li><a href="#"> Pedidos </a></li>
+                    </ul>
+                </article>
+            </div>
+            <hr class="footerLine"/>
+            <section class="copyright">
+                <ul>
+                    <li><a href="#"> Política de Privacidade </a></li>
+                    <li><a href="#"> Termos e Condições </a></li>
+                    <li><a href="#"> Acessibilidade </a></li>
+                    <li><a href="#"> Contato </a></li>
+                </ul>
+                <h3> Copyright @2025 Samuel Miller Soares. Todos os direitos reservados </h3>
+            </section>
+        </footer>
+
+    </body>
+</html>
