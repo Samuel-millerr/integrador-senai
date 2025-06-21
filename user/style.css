@@ -3,44 +3,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
     --primaria:#2D3436;
-    --secundaria:#DFE6E9;
-    --terciaria:#FBFAF8;
+    --secundaria: #FBFAF8;
+    --terciaria: #DFE6E9;
     --destaque01:#354D5C;
     --destaque02:#DFF5FF;
     --destaque03: #FFFFFF;
     --destaque04: #000000;
 }
 
-/* Botões */
+main {
+    background-color: var(--secundaria);
+}
+
+/* Elementos Reutilizaveis */
 .primaryButton {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 22.5rem;
     height: 3.5rem;
-    padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 0.5rem;
     background-color: var(--destaque01);
     color: var(--destaque03);
     font-size: 26px;
     font-family: "Montserrat";
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.9s;
     filter: drop-shadow(0px 0px 2px var(--destaque04));
     cursor: pointer;
+    text-decoration: none;
 }
 
 .primaryButton:hover {
     background-color: var(--primaria);
 }
 
-/* Textos */
 .titleHome {
     font-size: 48px;
+    font-family: "Montserrat";
+    color: var(--primaria);
+}
+
+.titlePages {
+    font-size: 28px;
     font-family: "Montserrat";
     color: var(--primaria);
 }
@@ -57,8 +68,52 @@
     font-weight: 300;
 }
 
+.itemInfo {
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primaria);
+}
 
-/* Aba de Navegação */
+.articlesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.breadCrumb {
+    display: flex;
+    align-items: start;
+    width: 90%;
+    padding: 1rem 0;
+    font-size: 18px;
+    color: var(--primaria);
+    font-family: "Montserrat";
+}
+
+.breadCrumb ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+}
+
+.breadCrumb li {
+    transition: 1s;
+}
+
+.breadCrumb li:hover {
+    transform: scale(1.05);
+}
+
+.breadCrumb a {
+    text-decoration: none;
+    color: var(--primaria);
+}
+
+/* ABA DE NAVEGAÇÃO */
 .navBar {
     display: flex;
     align-items: center;
@@ -104,7 +159,7 @@
     justify-content: center;
     width: 3.5rem;
     height: 3rem;
-    background-color: var(--secundaria);
+    background-color: var(--terciaria);
     cursor: pointer;
     border-radius: 0 0.2rem 0.2rem 0;
     border: none;
@@ -136,7 +191,7 @@
     height: 3.5rem;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
     display: flex;
     flex-direction: column;
@@ -145,16 +200,16 @@
     gap: 3rem;
     margin-top: 5rem;
     width: 100%;
-    height: 50rem;
     background-color: var(--primaria);
+    padding: 3rem;
 }
 
-.line {
+.footerLine {
     opacity: 25%;
     width: 85%;
     height: 1px;
     border: none;
-    background-color: var(--terciaria);
+    background-color: var(--secundaria);
 }
 
 .newsLetter {
@@ -162,7 +217,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--terciaria);
+    color: var(--secundaria);
     font-family: "Montserrat";
     text-align: center;
     gap: 1rem;
@@ -228,7 +283,7 @@
 .links h4 { 
     margin-bottom: 1rem;
     font-size: 20px;
-    color: var(--terciaria);
+    color: var(--secundaria);
     font-weight: 600;
 }
 
@@ -250,7 +305,7 @@
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
-    color: var(--terciaria);
+    color: var(--secundaria);
 }
 
 .links a:hover {
@@ -278,7 +333,7 @@
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
-    color: var(--terciaria);
+    color: var(--secundaria);
     transition: 1s;
 }
 
@@ -290,23 +345,20 @@
     transform: scale(1.03);
 }
 
-.copyright p {
+.copyright h3 {
     font-size: 17px;
-    color: var(--terciaria);
+    color: var(--secundaria);
+    font-weight: 500;
 }
 
 /* TELA HOME */
 /* Header */
-.mainHeader {
-    width: 100%;
-}
-
 .firstBanner {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 48rem;
-    background-color: var(--secundaria);
+    background-color: var(--terciaria);
     color: var(--primaria);
     
 }
@@ -351,7 +403,7 @@
     width: 27rem;
     height: 42rem;
     border-radius: 2px;
-    background-color: var(--secundaria);
+    background-color: var(--terciaria);
     transition: 0.3s;
     cursor: pointer;
     box-shadow: inset 0 0 12px var(--primaria);
@@ -463,7 +515,7 @@
     width: 100%;
     height: 54rem;
     background: url('src/telaHome/aboutUs.png'); 
-    color: var(--terciaria);
+    color: var(--secundaria);
 }
 
 .aboutUs article {
@@ -507,13 +559,14 @@
     font-size: 26px;
     font-family: "Montserrat";
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.9s;
     filter: drop-shadow(0px 0px 2px var(--destaque03));
     cursor: pointer;
+    text-decoration: none;
 }
 
 .buttonAboutUs:hover {
-    background-color: var(--secundaria);
+    background-color: var(--terciaria);
 }
 
 /* Vantagens */
@@ -543,7 +596,7 @@
 }
 
 /* TELA DE PRODUTOS */
-.firstSectionProduct {
+.sectionProduct {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -551,26 +604,29 @@
     gap: 1rem;
 }
 
+.banner {
+    width: 90%;
+    margin-top: 4rem;
+}
+
 .gapLine {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     opacity: 75%;
-    width: 75%;
+    width: 92%;
     height: 1px;
     border: none;
     background-color: var(--primaria);
 }
 
-.breadCrumb {
-    align-self: baseline;
-    padding: 1rem 0;
-    font-size: 18px;
-    color: var(--primaria);
-}
-
-.breadCrumb ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1rem;
+.gapLineProduct {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    opacity: 40%;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: var(--primaria);
 }
 
 .sectionTitle {
@@ -579,44 +635,750 @@
     color: var(--destaque01);
 }
 
+.categoryTitle {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--destaque01);
+}
+
 .productSection {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     gap: 2rem;
 }
 
 .productGrid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .productCard {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
-    background-color: var(--secundaria);
+    gap: 0.2rem;
+    background-color: var(--terciaria);
     border: 1px solid var(--destaque01);
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: start;
     color: var(--destaque01);
-    box-shadow: inset 0.2rem 0.2rem 15px 0px var(--destaque04);
+    box-shadow: inset 0rem 0rem 8px 0px var(--destaque04);
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+.productCard:hover {
+    transform: scale(1.03);
 }
 
 .productImage {
-    max-width: 100%;
-    height: 13rem;
-    margin-bottom: 20px;
+    align-self: center;
+    object-fit: contain;
+    margin: 1rem;
+    max-width: 13rem;
+    max-height: auto;
+    height: 16rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0px 5px 5px var(--destaque04));
 }
 
 .productName {
     font-size: 20px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
-.productPrice {
+.star {
+    width: 40%;
+}
+
+.productsPrice {
     font-size: 20px;
     font-weight: bold;
+}
+
+/* TELA PRODUTO INDIVIDUAL */
+.mainProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.productDisplay {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 1rem;
+}
+
+/* Imagens do Produto */
+.productImages {
+    display: flex;
+    flex: row;
+    gap: 2rem;
+}
+
+.asideImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.asideImages button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: var(--terciaria);
+    border-radius: 0.4rem;
+    border: solid 1px var(--destaque01);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.asideImages button:hover {
+    transform: scale(1.02);
+}
+
+.asideImages img {
+    padding: 1rem;
+    max-width: 110%;
+}
+
+#guitarBack {
+    rotate: 140deg;
+}
+
+#guitarHead {
+    rotate: 120deg;
+}
+
+.mainImage button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42rem;
+    height: 42rem;
+    background-color: var(--terciaria);
+    border-radius: 5px;
+    border: solid 1px var(--destaque01);
+}
+
+.mainImage img {
+    rotate: 45deg;
+    max-width: 40%;
+}
+
+/* Informação do Produto */
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+    font-family: "Montserrat";
+    color: var(--primaria);
+}
+
+.productInfo h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.reviewProduct {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.7rem;
+    height: 2rem}
+
+.reviewProduct img{
+    scale: 1.05;
+}
+
+.reviewQtd {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primaria);
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.stockStatus {
+    font-size: 18px;
+    font-weight: 600;
+    color: #135713;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 85%;
+}
+
+.description h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.description p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.colorsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin: 1rem 0;
+}
+
+.colorsTitle {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.colorOptions {
+    display: flex;
+    align-items: center;
+    padding-left: 0.4rem;
+    gap: 1.5rem;
+}
+
+.colorOption {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    border: 3px solid transparent; 
+    cursor: pointer;
+    transition: 1s;
+}
+
+.colorOption:hover {
+    transform: translateY(-4px);
+}
+
+.firstColorOption {
+    background-color: #EADBC8;
+    box-shadow: 0 0 0 7px var(--secundaria), 0 0 0 9px var(--primaria);
+}
+
+.secondColorOption {
+    background-color: #5D4037;
+    box-shadow: 0 0 0 7px var(--secundaria), 0 0 0 9px var(--terciaria);
+}
+
+.thirdColorOption {
+    background-color: orange;
+    box-shadow: 0 0 0 7px var(--secundaria), 0 0 0 9px var(--terciaria);
+}
+
+.quantitySelector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantitySelector label{
+    font-weight: 600;
+}
+
+#quantityInput {
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    border: solid 1px var(--primaria);
+    font-size: 16px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.addFavorites {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.addFavorites img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Detalhes do Produto */
+.productDetails {
+    width: 90%;
+    margin-top: 2rem;
+    border-top: 1px solid var(--primaria);
+    display: flex;
+    gap: 3rem;
+    font-family: "Montserrat";
+}
+
+.specifications, .customerReviews {
+    flex: 1;
+}
+
+/* Caracteristicas do Produto */
+.productDetails h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.specifications table {
+    width: 100%;
+    font-size: 16px;
+}
+
+.specifications td {
+    padding: 1rem;
+    border-bottom: solid 1px var(--terciaria);
+}
+
+.specifications tr:nth-child(even) {
+    background-color: var(--secundaria);
+}
+
+.specifications td:first-child {
+    font-weight: 600;
+    color: var(--primaria);
+    width: 30%;
+}
+
+
+/* Avaliações do Produto */
+.review {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 1rem;
+    border: 1px solid var(--destaque01);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.reviewName {
+    font-weight: 600;
+} 
+
+.reviewText {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.moreReviews {
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2.3rem;
+    background-color: transparent;
+    border: 2px solid var(--destaque01);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: "Montserrat";
+    transition: 1.5s;
+}
+
+.moreReviews:hover {
+    font-size: 17px;
+    background-color: var(--terciaria);
+}
+
+
+/* Produtos Relacionados */
+.otherProducts {
+    width: 90%;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-top: 1px solid var(--destaque01);
+    font-family: "Montserrat";
+    color: var(--primaria);
+}
+
+.otherProducts h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.otherProductsGrid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.otherProductsCard {
+    color: var(--primaria);
+    border: 1px solid var(--destaque01);
+    background-color: var(--destaque03);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.otherProductsCard:hover {
+    box-shadow: 0 0 8px var(--destaque01);
+}
+
+.otherProductImage {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: auto;
+    height: 16rem;
+    background-color: var(--terciaria);
+
+}
+
+.otherProductImage img {
+    rotate: 60deg;
+    max-width: 50%;
+    filter: drop-shadow(0px 5px 5px var(--destaque04));
+}
+
+.otherProductsCard h3 {
+    padding: 0.5rem 1rem 0.5rem 0.8rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.otherProductsCard p {
+    padding: 0 1rem 0.5rem 0.8rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* TELA DE CARRINHO*/
+.mainCart {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    max-width: 100%;
+    background-color: var(--secundaria);
+}
+
+.shoppingCart {
+    background-color: var(--terciaria);
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid var(--secundaria);
+}
+
+.conteinerImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    border: 1px solid var(--destaque01);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background-color: var(--terciaria);
+}
+
+.productImageCart {
+    rotate: 45deg;
+    width: 40%;
+    height: 40%;
+}
+
+.itemDetails {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    gap: 1rem;
+}
+
+.itemControls {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Montserrat";
+}
+
+.itemControls ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.qtdSelector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 1.8rem;
+    border-radius: 0.2rem;
+    background-color: var(--primaria);
+    color: var(--secundaria);
+}
+
+.qtdSelector button {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: var(--secundaria);
+    font-size: 20px;
+}
+
+.itemActions li:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+    color: var(--destaque01);
+    font-weight: 600;
+    transition: 1s ease-in-out;
+}
+
+.itemActions li a{
+    text-decoration: none;
+    color: var(--destaque01);
+    font-weight: 600;
+}
+
+.orderSummary {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    color: var(--primaria);
+    background-color: var(--destaque03);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0px 12px var(--destaque04);
+    gap: 1.5rem;
+}
+
+.orderSummary div h3, p  {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.orderSummary hr {
+    width: 100%;
+    color: var(--primaria);
+}
+
+/* TELA DE FINIZALIZAÇÃO*/
+.mainCheckOut {
+    display: flex;
+    padding: 3rem;
+    gap: 4rem;
+}
+
+.mainCheckOut .orderSummary .itemDetails{
+    width: 22rem;
+}
+
+.dateCheckOut {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--terciaria);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.dateCheckOut label{
+    font-size: 20px;
+}
+
+.dateCheckOut hr {
+    opacity: 50%;
+    width: 95%;
+    height: 1px;
+    border: none;
+    background-color: var(--primaria);
+}
+
+/* LOGIN E CADASTRO */
+.bodyLoginSingUp {
+    overflow: hidden;
+}
+
+.mainLoginSingUp {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secundaria);
+}
+
+.imageSection {
+    width: 100%;
+    overflow: hidden;
+}
+
+.imageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    padding: 2rem;
+    color: var(--primaria);
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.formSection header {
+    margin-top: 1rem;
+    margin-bottom: 9rem;
+}
+
+.formSection h2 {
+    font-size: 34px;
+}
+
+.formSection form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    gap: 0.3rem;
+}
+
+form label {
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+form input, select {
+    width: 100%;
+    padding: 1rem;
+    border-style: none;
+    border: solid 1px var(--primaria);
+    border-radius: 0.3rem;
+    font-size: 18px;
+    background-color: var(--destaque03);
+}
+
+.forgotPassword {
+    text-align: end;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.forgotPassword a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--primaria);
+}
+
+.forgotPassword a:hover {
+    text-decoration: underline;
+}
+
+.signUp {
+    font-size: 18px;
+    text-align: center;
+}
+
+.signUp a {
+    color: var(--destaque01);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.signUp a:hover {
+    text-decoration: underline;
+}
+
+/* Exclusivo tela de cadastro */
+.otherInputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.4rem;
+    padding: 1.5rem;
+    width: 31rem;
+    height: 4rem;
+    background-color: var(--primaria);
+    color: var(--secundaria);
+    border-radius: 0.5rem;
+}
+
+.otherInputs h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.otherInputs a {
+    text-align: center;
+    background-color: var(--secundaria);
+    color: var(--destaque01);
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    width: 8rem;
+    height: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#confirmPasswordInput {
+    margin-bottom: 1rem;
+}
+
+/* Exclusivo tela de cadastro de endereço */
+.formGroup {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 2rem;
+}
+
+.imageSectionSingUpAdress {
+    width: 40%;
 }
