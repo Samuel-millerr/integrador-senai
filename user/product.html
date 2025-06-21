@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Virtuose - California Vintage </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class = "mainHeader">
+            <!-- Aba de Navegação -->
+            <nav class="navBar">
+                <ul class="conteiner">
+                    <li><a href="../homePage.html"><img src="icons/logo.svg" class="logo" alt="Logo"/></a></li>               
+                    <li>
+                        <form class="searchBar"> 
+                            <input type="search" placeholder="Procurar"/>
+                            <a><img src="icons/navBarIcons/searchIcon.svg" alt="Ícone de pesquisa"></a>
+                        </form>
+                    </li>
+                    <li>
+                        <ul class="navIcons">
+                            <li><a href=""><img src="icons/navBarIcons/infoIcon.svg" alt="Ícone de informação"/> Sobre Nós </a></li>
+                            <li><a href="products.html"><img src="icons/navBarIcons/productsIcon.svg" alt="Ícone de produtos"/> Produtos </a></li>
+                            <li><a href="cart.html"><img src="icons/navBarIcons/cartIcon.svg" alt="Ícone de carrinho"/> Carrinho </a></li>
+                            <li><a href="login.html"><img src="icons/navBarIcons/perfilIcon.svg" alt="Ícone de perfil"/> Sua conta </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="mainProduct">
+            <!-- Caminho de navegação BreadCrum -->
+            <nav class="breadCrumb">
+                <ul>
+                    <li><a href="homePage.html"> Página Inicial </a></li>
+                    <li> > </li>
+                    <li><a href="products.html"> Violões </a></li>
+                    <li> > </li>
+                    <li><a href="products.html"> California Vintage </a></li>
+                </ul>
+            </nav>
+
+            <section class="productDisplay">
+                <article class="productImages">
+                    <figure class="asideImages">
+                        <button> <img src="src/telaProduto01/violaoCostas.png" alt="Violão Acústico California Vintage" id="guitarBack"/> </button>
+                        <button> <img src="src/telaProduto01/violaoFoco.png" alt="Violão Acústico California Vintage" id="guitarFocus"/> </button>
+                        <button> <img src="src/telaProduto01/violaoCabeca.png" alt="Violão Acústico California Vintage" id="guitarHead"/> </button>
+                    </figure>
+                    <figure class="mainImage">
+                        <button> <img src="src/telaProduto01/violaoFrente.png" alt="Violão Acústico California Vintage"/> </button>
+                    </figure>
+                </article>
+
+                <article class="productInfo">
+                    <h1> Violão Acústico California Vintage </h1>
+                    <div class="reviewProduct">
+                        <img src="icons/starsIcons/5stars.svg" alt="5 estrelas"/>
+                        <a href="#customerReviews" class="reviewQtd"> (32 avaliações) </a>
+                    </div>
+                    
+                    <p class="price"> R$ 867,90 </p>
+                    <p class="stockStatus"> Em estoque </p>
+                    <hr class="gapLine"/>
+
+                    <section class="description">
+                        <h2> Descrição </h2>
+                        <p> Unindo design acústico e a versatilidade de muitos timbres, esse modelo oferece uma experiência completa. Com corpo leve, tampo em madeira maciça e controles intuitivos de volume, é ideal para quem busca praticidade e facilidade em um único instrumento. </p>
+                    </section>
+                    
+                    <article class="colorsSection">
+                        <p class="colorsTitle"> Cores </p>
+                        <div class="colorOptions">
+                            <button class="colorOption firstColorOption"></button>
+                            <button class="colorOption secondColorOption"></button>
+                            <button class="colorOption thirdColorOption"></button>
+                        </div>
+                    </article>
+
+                    <div class="quantitySelector">
+                        <label for="quantityInput"> Quantidade: </label>
+                        <select id="quantityInput" name="Qtd">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>  
+                        </select>
+                    </div>
+
+                    <div class="actions">
+                        <a href="cart.html" class="primaryButton"> Adicionar ao Carrinho </a>
+                        <a href="" class="addFavorites"> <img src="" alt=""/> </a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="productDetails">
+                <article class="specifications">
+                    <h2> Caracteristicas do Produto </h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td> Marca </td>
+                                <td> Virtuose </td>
+                            </tr>
+                            <tr>
+                                <td> Modelo </td>
+                                <td> California Vintage </td>
+                            </tr>
+                            <tr>
+                                <td> Corpo </td>
+                                <td> Alder com acabamento em verniz </td>
+                            </tr>
+                            <tr>
+                                <td> Tampo </td>
+                                <td> Abeto Maciço </td>
+                            </tr>
+                            <tr>
+                                <td> Braço </td>
+                                <td> Alder, formato “C”  </td>
+                            </tr>
+                            <tr>
+                                <td> Material das cordas </td>
+                                <td> Metal </td>
+                            </tr>
+                            <tr>
+                                <td> Acabamento </td>
+                                <td> Brilhante </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <article class="customerReviews" id="customerReviews">
+                    <h2> Avaliações de Clientes </h2>
+                    <article class="review">
+                        <div class="articlesHeader">
+                            <p class="reviewName"> Joao S. </p>
+                            <img src="icons/starsIcons/5stars.svg" alt="5 estrelas"/>
+                        </div>
+                        <p class="reviewText"> Violão incrível! O som é muito nítido e o acabamento é impecável. Chegou antes do prazo, super recomendo. </p>
+                    </article>
+                    
+                    <article class="review">
+                        <div class="articlesHeader">
+                            <p class="reviewName"> Mariana P. </p>
+                            <img src="icons/starsIcons/4stars.svg" alt="4 estrelas"/>
+                        </div>
+                        <p class="reviewText"> Ótimo custo-benefício. O braço é muito confortável, só achei as cordas que vieram de fábrica um pouco altas, mas é um ajuste simples. </p>
+                    </article>
+                    <button type="button" class="moreReviews"> Ver todas as avaliações </button>
+                </article>
+            </section>
+
+            <section class="otherProducts">
+                <h2> Você também pode gostar</h2>
+                <div class="otherProductsGrid">
+                    <a href="" class="otherProductsCard">
+                        <figure class="otherProductImage">
+                            <img src="src/telaProdutos/lancamentos/baixoAmerican.png" alt=""/>
+                        </figure>
+                        <h3> Violão Clássico NT </h3>
+                        <p> R$S 499,90 </p>
+                    </a>
+                    <a href="" class="otherProductsCard">
+                        <figure class="otherProductImage">
+                            <img src="src/telaProdutos/lancamentos/violaoFibraCarbono.png" alt=""/>
+                        </figure>
+                        <h3> Violão Clássico NT </h3>
+                        <p> R$S 499,90 </p>
+                    </a>
+                    <a href="" class="otherProductsCard">
+                        <figure class="otherProductImage">
+                            <img src="src/telaProdutos/maisVendidos/contraBaixoTrbx174.png" alt=""/>
+                        </figure>
+                        <h3> Violão Clássico NT </h3>
+                        <p> R$S 499,90 </p>
+                    </a>
+                    <a href="" class="otherProductsCard">
+                        <figure class="otherProductImage">
+                            <img src="src/telaProdutos/maisVistos/capaViolaoHoltter.png" alt=""/>
+                        </figure>
+                        <h3> Violão Clássico NT </h3>
+                        <p> R$S 499,90 </p>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class = "linksFooter"> <!-- "div" utilizada para definir e delimitar o espaço dos links no footer -->
+                <article class = "links">
+                    <h4> Produtos </h4>
+                    <div class = "productsLinks"> <!-- "div" utilizada para separar a lista em dois espaços diferentes-->
+                        <div> <!-- "div" usada para alinhamento -->
+                            <ul>
+                                <li><a href="#"> Violões </a></li>
+                                <li><a href="#"> Guitarras </a></li>
+                                <li><a href="#"> Baixos </a></li>
+                                <li><a href="#"> Ukuleles </a></li>
+                            </ul>
+                        </div>
+                        <div> <!-- "div" usada para alinhamento -->
+                            <ul>    
+                                <li><a href="#"> Baterias </a></li>
+                                <li><a href="#"> Violinos </a></li>
+                                <li><a href="#"> Teclados </a></li>
+                                <li><a href="#"> Acessórios </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class = "links">
+                    <h4> Institucional </h4>
+                    <ul>
+                        <li><a href="#"> Sobre nós </a></li>
+                        <li><a href="#"> Fale conosco </a></li>
+                        <li><a href="#"> Dúvidas </a></li>
+                        <li><a href="#"> Politica de privacidade </a></li>
+                    </ul>
+                </article>
+                <article class = "links">
+                    <h4> Conta </h4>
+                    <ul>
+                        <li><a href="#"> Minha conta </a></li>
+                        <li><a href="#"> Pedidos </a></li>
+                    </ul>
+                </article>
+            </div>
+            <hr class="footerLine"/>
+            <section class="copyright">
+                <ul>
+                    <li><a href="#"> Política de Privacidade </a></li>
+                    <li><a href="#"> Termos e Condições </a></li>
+                    <li><a href="#"> Acessibilidade </a></li>
+                    <li><a href="#"> Contato </a></li>
+                </ul>
+                <h3> Copyright @2025 Samuel Miller Soares. Todos os direitos reservados </h3>
+            </section>
+        </footer>
+    </body>
+</html>
