@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Virtuose - Carrinho </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class = "mainHeader">
+            <!-- Aba de Navegação -->
+            <nav class="navBar">
+                <ul class="conteiner">
+                    <li><a href="homePage.html"><img src="icons/logo.svg" class="logo" alt="Logo"/></a></li>               
+                    <li>
+                        <form class="searchBar"> 
+                            <input type="search" placeholder="Procurar"/>
+                            <a><img src="icons/navBarIcons/searchIcon.svg" alt="Ícone de pesquisa"></a>
+                        </form>
+                    </li>
+                    <li>
+                        <ul class="navIcons">
+                            <li><a href=""><img src="icons/navBarIcons/infoIcon.svg" alt="Ícone de informação"/> Sobre Nós </a></li>
+                            <li><a href="products.html"><img src="icons/navBarIcons/productsIcon.svg" alt="Ícone de produtos"/> Produtos </a></li>
+                            <li><a href="cart.html"><img src="icons/navBarIcons/cartIcon.svg" alt="Ícone de carrinho"/> Carrinho </a></li>
+                            <li><a href="login.html"><img src="icons/navBarIcons/perfilIcon.svg" alt="Ícone de perfil"/> Sua conta </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="mainCheckOut">
+           <section class="dateCheckOut">
+                <article class="formSection">
+                    <h2 class="titlePages"> Dados pessoais </h2>
+                    <hr/>
+                    <p> Altere ou adicone seu dados pessoais cadastrados em nossa loja </p>
+                    <div class="formGroup">
+                        <form>
+                            <label for="nameInput"> Nome Completo </label>
+                            <input type="text" id="nameInput" placeholder="Insira seu nome completo"/>
+                            
+                            <label for="cellphoneInput"> Celular </label>
+                            <input type="number" id="cellphoneInput" placeholder="Insira seu telefone"/>
+
+                            <label for="borndateInput"> Data de Nascimento </label>
+                            <input type="date" id="borndateInput"/>
+                        </form>
+                        <form>
+                            <label for="cpfInput"> CPF </label>
+                            <input type="text" id="cpfInput" placeholder="Insira seu CPF"/>
+
+                            <label for="sexInput"> Sexo </label>
+                            <select id="sexInput">
+                                <option value="1"> Masculino </option>
+                                <option value="2"> Feminino </option> 
+                            </select>
+                        </form>
+                    </div>
+                </article>
+                <article class="formSection">
+                    <h2 class="titlePages"> Forma de envio </h2>
+                    <hr/>
+                    <p> Adicione ou edite as principais informações sobre seu endereço </p>
+                    <div class="formGroup">
+                        <form>
+                            <label for="cepInput"> CEP </label>
+                            <input type="text" id="cepInput" placeholder="Insira seu CEP"/>
+                            
+                            <label for="complementInput"> Complemento </label>
+                            <input type="text" id="complementInput" placeholder="Insira o complemento do endereço"/>
+
+                            <label for="referenceInput"> Referência </label>
+                            <input type="text" id="referenceInput" placeholder="Insira a referência do endereço"/>
+
+                            <label for="neighborhoodInput"> Bairro </label>
+                            <input type="text" id="neighborhoodInput" placeholder="Insira seu bairro"/>
+                        </form>
+                        <form>
+                            <label for="adressInput"> Endereço </label>
+                            <input type="text" id="adressInput" placeholder="Insira seu endereço"/>
+                            
+                            <label for="stateInput"> Estado </label>
+                            <select id="stateInput">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+
+                            <label for="cityInput"> Cidade </label>
+                            <input type="text" id="cityInput" placeholder="Insira sua cidade"/>
+                        </form>
+                    </div>
+                </article>
+                <article class="formSection">
+                    <h2 class="titlePages"> Forma de pagamento </h2>
+                    <hr/>
+                    <p> Escolha a sua forma de pagamento e caso necessário insira as informações complementares </p>
+                    <form class="paymentOptions">
+                        <div class="paymentOption">
+                            <input 
+                                type="radio" 
+                                id="boleto" 
+                                checked="checked"
+                            />
+                            <label for="boleto"> <img src="https://i.imgur.com/Kk5cSHi.png" alt="Ícone de Boleto"/> Boleto </label>
+                        </div>
+
+                        <div class="paymentOption">
+                            <input type="radio" id="creditcard"/>
+                            <label for="creditCard"><img src="https://i.imgur.com/R3x3fV3.png" alt="Ícone de Cartão de Crédito"/> Cartão de Crédito </label>
+                        </div>
+
+                        <div class="paymentOption">
+                            <input type="radio" id="pix" />
+                            <label for="pix"> <img src="https://i.imgur.com/F0j4y5S.png" alt="Ícone de Pix"/> Pix </label>
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section class="orderSummary">
+                <h2 class="titlePages"> Resumo da Compra </h2>
+                <hr/>
+                <article class="cartItem">
+                    <figure class="conteinerImage">
+                        <img src="src/telaHome/violao01.png" class="productImageCart"/>
+                    </figure>
+                    <article class="itemDetails">
+                        <h3> Violão Acustico California Vintage </h3>
+                        <p> R$ 867,90 </p>
+                        <p> Quantidade: 1 </p>
+                    </article>
+                </article> 
+                <hr/>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class = "linksFooter"> <!-- "div" utilizada para definir e delimitar o espaço dos links no footer -->
+                <article class = "links">
+                    <h4> Produtos </h4>
+                    <div class = "productsLinks"> <!-- "div" utilizada para separar a lista em dois espaços diferentes-->
+                        <div> <!-- "div" usada para alinhamento -->
+                            <ul>
+                                <li><a href="#"> Violões </a></li>
+                                <li><a href="#"> Guitarras </a></li>
+                                <li><a href="#"> Baixos </a></li>
+                                <li><a href="#"> Ukuleles </a></li>
+                            </ul>
+                        </div>
+                        <div> <!-- "div" usada para alinhamento -->
+                            <ul>    
+                                <li><a href="#"> Baterias </a></li>
+                                <li><a href="#"> Violinos </a></li>
+                                <li><a href="#"> Teclados </a></li>
+                                <li><a href="#"> Acessórios </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class = "links">
+                    <h4> Institucional </h4>
+                    <ul>
+                        <li><a href="#"> Sobre nós </a></li>
+                        <li><a href="#"> Fale conosco </a></li>
+                        <li><a href="#"> Dúvidas </a></li>
+                        <li><a href="#"> Politica de privacidade </a></li>
+                    </ul>
+                </article>
+                <article class = "links">
+                    <h4> Conta </h4>
+                    <ul>
+                        <li><a href="#"> Minha conta </a></li>
+                        <li><a href="#"> Pedidos </a></li>
+                    </ul>
+                </article>
+            </div>
+            <hr class="footerLine"/>
+            <section class="copyright">
+                <ul>
+                    <li><a href="#"> Política de Privacidade </a></li>
+                    <li><a href="#"> Termos e Condições </a></li>
+                    <li><a href="#"> Acessibilidade </a></li>
+                    <li><a href="#"> Contato </a></li>
+                </ul>
+                <h3> Copyright @2025 Samuel Miller Soares. Todos os direitos reservados </h3>
+            </section>
+        </footer>
+
+    </body>
+</html>
