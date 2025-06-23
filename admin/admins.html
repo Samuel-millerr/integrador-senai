@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Virtuose - Administrador </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    </head>
+    <body class="bodyDashboard">
+        <main class="mainDashboard">
+            <aside class="asideBar">
+                <figure class="logo">
+                    <img src="icons/logo.svg" alt="Logo da Virtuose"/>
+                    <figcaption> Administrador </figcaption>
+                </figure>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">
+                                <img src="icons/dashBoardIcon.svg" alt="ícone de Gráfico"/>
+                                <p> DashBoard </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.html">
+                                <img src="icons/productsIcon.svg" alt="Ícone de Produtos"/>
+                                <p> Produtos </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="orders.html">
+                                <img src="icons/orderIcon.svg" alt="Ícone de Pedidos"/>
+                                <p> Pedidos </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admins.html" class="active">
+                                <img src="icons/adminIcon.svg" alt="Ícone de Administradores"/>
+                                <p> Administradores </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <footer>
+                    <a href="login.html">
+                        <img src="icons/arrowIcon.svg" alt="Ícone de sair"/>
+                        <p> Sair </p>
+                    </a>
+                </footer>
+            </aside>
+            <div class="mainContent">
+                <header class="pageHeader">
+                    <h2 class="adminTitle"> Gerenciar Administradores </h2>
+                    <div class="userProfile">
+                        <div class="userAvatar"></div>
+                        <article class="userInfo">
+                            <h3 class="userName"> Nome </h3>
+                            <P class="userRole"> Administrador </P>
+                        </article>
+                    </div>
+                </header>
+                <section class="productsSection">
+                    <header class="sectionHeader">
+                        <h2> Lista de Administradores</h2>
+                        <a href="#" class="buttonAdmin"> + Adicionar novo</a>
+                    </header>
+                    <div class="tableContainer">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th> Nome</th>
+                                    <th> Email </th>
+                                    <th> Função </th>
+                                    <th> Status </th>
+                                    <th> Ações </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> João da Silva  </td>   
+                                    <td> joao.silva@email.com </td>  
+                                    <td> Super Admin </td>  
+                                    <td> Ativo </td>  
+                                    <td class="actions">
+                                        <a href="#" class="actionIcon">
+                                        <img src="icons/editIcon.svg" alt="Ícone de Edição"/>
+                                        </a>
+                                        <a href="#" class="actionIcon">
+                                        <img src="icons/deleteIcon.svg" alt="Ícone de Remoção"/>
+                                        </a>
+                                    </td>  
+                                </tr>
+                                <tr>
+                                    <td> Maria Oliveira </td>  
+                                    <td> maria.o@email.com </td>  
+                                    <td> Administrador </td>  
+                                    <td> Ativo </td>  
+                                    <td class="actions">
+                                        <a href="#" class="actionIcon">
+                                        <img src="icons/editIcon.svg" alt="Ícone de Edição"/>
+                                        </a>
+                                        <a href="#" class="actionIcon">
+                                        <img src="icons/deleteIcon.svg" alt="Ícone de Remoção"/>
+                                        </a>
+                                    </td>  
+                                </tr>
+                                <tr>
+                                    <td> Carlos Souza </td>  
+                                    <td> carlos.s@email.com </td>  
+                                    <td> Administrador </td>  
+                                    <td> Inativo </td>  
+                                    <td class="actions">
+                                        <a href="#" class="actionIcon">
+                                        <img src="icons/editIcon.svg" alt="Ícone de Edição"/>
+                                        </a>
+                                        <a href="#" class="actionIcon">
+                                        <img src="icons/deleteIcon.svg" alt="Ícone de Remoção"/>
+                                        </a>
+                                    </td>  
+                                </tr>
+                                <tr>
+                                    <td> Ana Pereira </td>  
+                                    <td> ana.p@email.com </td>  
+                                    <td> Editor </td>  
+                                    <td> Ativo </td>  
+                                    <td class="actions">
+                                        <a href="#" class="actionIcon">
+                                        <img src="icons/editIcon.svg" alt="Ícone de Edição"/>
+                                        </a>
+                                        <a href="#" class="actionIcon">
+                                        <img src="icons/deleteIcon.svg" alt="Ícone de Remoção"/>
+                                        </a>
+                                    </td>  
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
