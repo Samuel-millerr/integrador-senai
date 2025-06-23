@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Montserrat";
 }
@@ -173,7 +172,6 @@
 
 .mainDashboard {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     min-height: 100vh;
     color: var(--primaria);
@@ -184,9 +182,10 @@
     justify-content: space-between;
     background-color: var(--terciaria) ;
     align-items: center;
-    width: 100%;
+    width: 95%;
     padding: 2rem;
-    height: 6rem;
+    padding-left: 4rem;
+    height: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -405,3 +404,4 @@ tbody tr {
 .ordersSection .actionIcon {
     margin-left: 1.3rem;
 }
+
