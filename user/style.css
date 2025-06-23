@@ -14,6 +14,9 @@
     --destaque02:#DFF5FF;
     --destaque03: #FFFFFF;
     --destaque04: #000000;
+    --okColor: #135713;
+    --atentionColor: #785006;
+    --alertColor: #8F1D1E;
 }
 
 main {
@@ -419,7 +422,7 @@ form input, select, textarea {
 .productLine {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .bigProductCard {
@@ -711,6 +714,22 @@ form input, select, textarea {
     filter: drop-shadow(0px 5px 5px var(--destaque04));
 }
 
+#kitUkulele {
+    padding-top: 3rem;
+}
+
+#tecladoYamaha {
+    padding-top: 7rem;
+}
+
+#gaitaFender {
+    padding-top: 5rem;
+}
+
+#caseGlass {
+    padding-top: 5rem;
+}
+
 .productName {
     font-size: 20px;
     font-weight: 500;
@@ -866,7 +885,7 @@ form input, select, textarea {
     text-align: start;
     font-size: 18px;
     font-weight: 600;
-    color: #135713;
+    color: var(--goodColor);
 }
 
 .description {
@@ -921,6 +940,8 @@ form input, select, textarea {
     transform: translateY(-4px);
 }
 
+
+/* Cores utilizadas na parte de produto, não são usadas no root por conta de serem utilizadas somente uma vez */
 .firstColorOption {
     background-color: #EADBC8;
     box-shadow: 0 0 0 7px var(--secundaria), 0 0 0 9px var(--primaria);
@@ -1661,7 +1682,7 @@ form label {
 .userInfo a {
     display: flex;
     align-items: center;
-    color: #8F1D1E;
+    color: var(--alertColor);
     font-size: 20px;
     font-weight: 600;
     gap: 0.5rem;
@@ -1792,7 +1813,7 @@ form label {
     font-weight: 600;
     text-align: start;
     font-size: 20px;
-    color: #785006;
+    color: var(--atentionColor);
 }
 
 .accountLinks {
@@ -2121,7 +2142,7 @@ form label {
 }
 
 .actionsAddress a:last-child {
-    color: #8F1D1E;
+    color: var(--alertColor);
 }
 
 /* TELA DE PERFIL - PRIVACIDADE */
@@ -2161,7 +2182,7 @@ form label {
 
 .fieldInfo a:last-child {
     color: var(--secundaria);
-    background-color: #8F1D1E;
+    background-color: var(--alertColor);
 }
 
 
