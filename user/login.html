@@ -2,34 +2,29 @@
 <html lang ="pt-br">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title> Virtuose - Login </title>
-        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="style.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     </head>
-
     <body class="bodyLoginSingUp">
         <main class="mainLoginSingUp">
-            <section class="imageSection">
+            <section class="imageSection"> <!-- Uso de duas sections para divisão da página em dois blocos -->
                 <img src="src/login-cadastro/backgroundLogin.png" alt="Músico tocando um baixo elétrico em foco."/>
             </section>
-            
             <section class="formSection">
-                <header>
-                    <h1><a href="homePage.html"><img src="icons/logoBlack.svg" alt="Logo"></a></h1>
+                <header> <!-- Header da pagina para localização da logo -->
+                    <a href="../index.html"><img src="icons/logoBlack.svg" alt="Logo da Virtuose"></a>
                 </header>
                 <h2> Faça login ou crie uma conta </h2>
                 <form>
                     <label for="emailInput"> Email </label>
-                    <input type="email" id="emailInput" placeholder="Digite seu email"/>
-
+                    <input type="email" id="emailInput" placeholder="Digite seu email" name="email" required/>
                     <label for="passwordInput"> Senha </label>
-                    <input type="password" id="passwordInput" placeholder="Digite sua senha"/>
-
+                    <input type="password" id="passwordInput" placeholder="Digite sua senha" name="password" required/>
                     <p class="forgotPassword"><a href="#"> Esqueceu sua senha? </a></p>
-                    
                     <a href="homePage.html" class="primaryButton"> Fazer login </a>
                 </form>
                 <p class="signUp"> Não tem uma conta? <a href="singUp.html"> Crie uma </a></p>
