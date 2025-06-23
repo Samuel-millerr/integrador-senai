@@ -14,7 +14,10 @@ O e-commerce presente nesse repósitorio sendo seu nome "Virtuose" tem como obje
 É possivel acessar o integrador de duas formas distintas:
  
 1. Acessando o link a seguir, sendo o mesmo uma hospedagem das páginas neste repósitorio:\
-https://samuel-millerr.github.io/integrador-senai/
+**Caminho do Usuário:** \
+https://samuel-millerr.github.io/integrador-senai/index.html \
+**Caminho do Administrador:** \
+https://samuel-millerr.github.io/integrador-senai/admin/login.html
  
 2. Realizando a instalação/clonagem do repósitorio em sua maqina local através do seguinte comando:
 ```
