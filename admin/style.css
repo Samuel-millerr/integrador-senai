@@ -1,0 +1,407 @@
+/* Predefinções Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat";
+}
+
+:root {
+    --primaria:#2D3436;
+    --secundaria: #FBFAF8;
+    --terciaria: #DFE6E9;
+    --destaque01:#354D5C;
+    --destaque02:#DFF5FF;
+    --destaque03: #FFFFFF;
+    --destaque04: #000000;
+}
+
+.adminTitle {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+/* AsideNavBar */
+.asideBar {
+    width: 16rem;
+    height: 100vh;
+    background-color: var(--primaria);
+    color: var(--secundaria);
+    padding: 1.5rem 0;
+}
+
+.asideBar .logo {
+    padding: 0 1.5rem 1rem 1.5rem;
+    text-align: center;
+    border-bottom: solid 1px var(--destaque03);
+}
+
+.asideBar .logo p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--terciaria);
+}
+
+.asideBar nav ul {
+    list-style: none;
+}
+
+.asideBar nav li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.6rem;
+    color: var(--secundaria);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.asideBar nav li a:hover {
+    background-color: var(--destaque01);    
+}
+
+.asideBar nav li a.active {
+    background-color: var(--destaque01);
+    color: var(--sidebar-text-active);
+    font-weight: 550;
+}
+
+.asideBar footer {
+    margin-top: 17rem;
+    padding: 1rem 1.5rem 0 1.5rem;
+    border-top: solid 1px var(--destaque03);
+}
+
+.asideBar footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight:500;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: 1s;
+    color: var(--secundaria);
+}
+
+.asideBar footer a:hover {
+    transform: scale(1.02);
+}
+
+/* TELA LOGIN ADMIN */
+.mainSection {
+    flex-grow: 1;
+    padding: 0 2rem 0 2rem;
+}
+
+.loginBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secundaria);
+    color: var(--primaria);
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.mainLogin {
+    text-align: center;
+}
+
+.mainLogin header{
+   margin-bottom: 3.5rem;
+}
+
+.mainLogin header img{
+    width: 22.5rem;
+    height: auto;
+}
+
+.formSection {
+    width: 100%;
+}
+
+.mainLogin form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.mainLogin form label {
+    align-self: flex-start;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0.4rem 0;
+}
+
+.mainLogin form input {
+    width: 100%;
+    font-size: 18px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: solid 1px var(--primaria);
+}
+
+.submitButton {
+    padding: 0.8rem 10rem;
+    background-color: var(--destaque01);
+    color: var(--secundaria);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+    filter: drop-shadow(0px 0px 2px var(--destaque04));
+    text-decoration: none;
+}
+
+.submitButton:hover {
+    background-color: var(--primaria);
+}
+
+/* TELA DASHBOARD */
+/* Header */
+.bodyDashboard {
+    overflow: hidden;
+}
+
+.mainDashboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--primaria);
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--terciaria) ;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    background-color: var(--primaria);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.userAvatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--secundaria);
+}
+
+.userInfo {
+    margin-left: 1rem;
+    color: var(--secundaria);
+}
+
+.userInfo .userName {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.userInfo .userRole {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Cards */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.statCard {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 0 6px var(--destaque04);
+    background-color: var(--destaque03);
+    padding: 1.5rem;
+    border-radius: 0.5rem
+}
+
+.statInfo .statValue {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.statInfo .statLabel {
+    font-size: 18px;
+}
+
+/* Paineis com conteúdo */
+.panelsGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.contentPanel {
+    background-color: var(--destaque03);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0px 8px var(--destaque04);
+}
+
+.largePanel {
+    min-height: 28rem;
+    object-fit: cover;
+}
+
+.largePanel img{
+    width: 83%;
+}
+
+.smallPanel {
+    min-height: 28rem;
+}
+
+.smallPanel ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.contentPanel h3 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* TELA PRODUTOS */
+.groupAboutProducts {
+    display: flex;
+    flex-direction: column;
+}
+
+.groupAboutProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.groupAboutProducts a{
+    margin-left: 0.2rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--destaque01);
+    text-decoration: none;
+}
+
+.groupAboutProducts a:hover{
+    text-decoration: underline;
+}
+
+.productsSection {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+    color: var(--primaria);
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+
+.sectionHeader h2 {
+    font-size: 28px;
+}
+
+.buttonAdmin {
+    font-size: 18px;
+    background-color: var(--destaque01);
+    color: var(--secundaria);
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+/* Tabela */
+.tableContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85rem;
+    background-color: var(--destaque03);
+}
+
+table {
+    width: 83%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px var(--destaque04);
+    border-radius: 0.8rem;
+}
+
+th, td {
+    padding: 0.9rem;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    vertical-align: middle;
+}
+
+thead tr {
+    background-color: var(--terciaria);
+}
+
+th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+tbody tr {
+    border-bottom: solid 1px var(--terciaria);
+}
+
+.actionIcon {
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.actionIcon img {
+    transition: 1s;
+
+}
+
+.actionIcon img:hover {
+    transform: scale(1.15);
+}
+
+/* TELA DE PEDIDOS*/
+.ordersSection .actionIcon {
+    margin-left: 1.3rem;
+}
