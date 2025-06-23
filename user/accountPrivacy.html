@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Virtuose - Privacidade </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class = "mainHeader">
+            <!-- Aba de Navegação -->
+            <nav class="navBar">
+                <ul class="conteiner">
+                    <li><a href="homePage.html"><img src="icons/logo.svg" class="logo" alt="Logo"/></a></li>
+                    <li>
+                        <form class="searchBar"> 
+                            <input type="search" placeholder="Procurar"/>
+                            <a href="#"><img src="icons/navBarIcons/searchIcon.svg" alt="Ícone de pesquisa"/></a>
+                        </form>
+                    </li>
+                    <li>
+                        <ul class="navIcons">
+                            <li><a href="aboutUs.html"><img src="icons/navBarIcons/infoIcon.svg" alt="Ícone de informação"/> Sobre Nós </a></li>
+                            <li><a href="products.html"><img src="icons/navBarIcons/productsIcon.svg" alt="Ícone de produtos"/> Produtos </a></li>
+                            <li><a href="cart.html"><img src="icons/navBarIcons/cartIcon.svg" alt="Ícone de carrinho"/> Carrinho </a></li>
+                            <li><a href="account.html"><img src="icons/navBarIcons/perfilIcon.svg" alt="Ícone de perfil"/> Sua conta </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainAccountSettings">
+            <nav class="breadCrumb">
+                <ul>
+                    <li><a href="account.html"> Sua conta </a></li>
+                    <li> > </li>
+                    <li><a href="accountAddress.html"> Privacidade </a></li>
+                </ul>
+            </nav>
+            <section class="accountSectionPrivacy">
+                <h1 class="titleAccountSettings"> Configurações de Privacidade </h1>
+                <hr class="gapLine"/>
+                <article class="dataField">
+                    <article class="fieldInfo">
+                        <h2> Configurações de Comunicação </h2>
+                        <hr class="gapLine"/>
+                        <div class="infoPrivacy">
+                            <article>
+                                <h3 class="fieldLabel">  E-mails promocionais </h3>
+                                <p class="fieldValue"> Receber ofertas especiais, descontos e novidades sobre produtos.  </p>
+                            </article>
+                            <label class="toggleSwitch">
+                            <input type="checkbox" checked="checked" />
+                            <span class="slider"></span>
+                            </label>
+                        </div>
+                        <hr class="gapLine"/>
+                        <div class="infoPrivacy">
+                            <article>
+                                <h3 class="fieldLabel">  Notícias Semanais </h3>
+                                <p class="fieldValue"> Receber nosso boletim de conteúdo relacionado sobre o mundo musical.  </p>
+                            </article>
+                            <label class="toggleSwitch">
+                            <input type="checkbox"/>
+                            <span class="slider"></span>
+                            </label>
+                        </div>
+                        <hr class="gapLine"/>
+                        <div class="infoPrivacy">
+                            <article>
+                                <h3 class="fieldLabel"> Avisos sobre o carrinho  </h3>
+                                <p class="fieldValue"> Receber lembrentes sobre os itens deixados em seu carrinho.  </p>
+                            </article>
+                            <label class="toggleSwitch">
+                            <input type="checkbox"/>
+                            <span class="slider"></span>
+                            </label>  
+                        </div>
+                    </article>
+                </article>
+                <article class="dataField">
+                    <article class="fieldInfo">
+                        <h2> Gerenciamento de Dados </h2>
+                        <hr class="gapLine"/>
+                        <article>
+                            <h3 class="fieldLabel">  Baixe seus dados </h3>
+                            <p class="fieldValue"> Faça um dowload de um arquivo com todas as informações que temos sobre sua conta, como hitórico de pedidos e dados cadastrais.  </p>
+                        </article>
+                        <a class="settingsButton"> Solicitar dados </a>
+                        <hr class="gapLine"/>
+                        <article>
+                            <h3 class="fieldLabel">  Excluir sua conta </h3>
+                            <p class="fieldValue"> Esta ação é permanente, caso a confime todos os seus dados serão excluidos de nosso sistema. Você perderá os dados e o acesso a sua conta.  </p>
+                        </article>
+                        <a class="settingsButton"> Excluir conta </a>
+                    </article>
+                </article>
+                <article class="dataField">
+                    <details class="seePolitics">
+                        <summary> Ver a Políticas </summary>
+                        <h4> Política de Privacidade </h4>
+                        <p> A sua privacidade é muito importante para nós. Todas as informações fornecidas, como dados pessoais, endereço e informações de pagamento, são tratadas de forma segura e confidencial. Utilizamos seus dados exclusivamente para processar pedidos, facilitar entregas, oferecer um atendimento ideal para você. Prezamos pela transparência e segurança em toda a sua experiência dentro da Virtuose. </p>
+                        <h4> Termos e Condições </h4>
+                        <p> Ao acessar e utilizar este site, você concorda com os nossos Termos e Condições. Isso inclui informações sobre formas de pagamento, prazos de entrega, política de trocas, devoluções e garantias dos produtos.   </p>
+                        <h4> Acessibilidade </h4>
+                        <p> Nossa inteção é oferecer uma experiência inclusiva para todos os usuários. Nosso site é feito seguindo boas práticas, além disso, trabalhamos para garantir contraste ideal, textos legíveis e navegação simples. Sabemos que a acessibilidade é um processo contínuo e, por isso, sinta a vontade para dar sugestões atráves do nosso menu de atendimento. </p>               
+                    </details>
+                </article>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class = "linksFooter"> <!-- "div" utilizada para definir e delimitar o espaço dos links no footer -->
+                <article class = "links"> <!-- Links do footer, o usuário pode navegar para certas páginas através deles -->
+                    <h4> Produtos </h4>
+                    <div class = "productsLinks"> <!-- "div" utilizada para separar a lista em dois espaços diferentes-->
+                        <div> <!-- "div" usada para alinhamento -->
+                            <ul>
+                                <li><a href="products.html"> Violões </a></li>
+                                <li><a href="products.html"> Guitarras </a></li>
+                                <li><a href="products.html"> Baixos </a></li>
+                                <li><a href="products.html"> Ukuleles </a></li>
+                            </ul>
+                        </div>
+                        <div> <!-- "div" usada para alinhamento -->
+                            <ul>
+                                <li><a href="products.html"> Baterias </a></li>
+                                <li><a href="products.html"> Violinos </a></li>
+                                <li><a href="products.html"> Teclados </a></li>
+                                <li><a href="products.html"> Acessórios </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class = "links">
+                    <h4> Institucional </h4>
+                    <ul>
+                        <li><a href="aboutUs.html"> Sobre nós </a></li>
+                        <li><a href="callCenter.html"> Fale conosco </a></li>
+                        <li><a href="callCenter.html"> Dúvidas </a></li>
+                    </ul>
+                </article>
+                <article class = "links">
+                    <h4> Conta </h4>
+                    <ul>
+                        <li><a href="account.html"> Minha conta </a></li>
+                        <li><a href="accountOrders.html"> Pedidos </a></li>
+                    </ul>
+                </article>
+            </div>
+            <hr class="footerLine"/>
+            <section class="copyright">
+                <ul>
+                    <li><a href="accountPrivacy.html"> Política de Privacidade </a></li>
+                    <li><a href="accountPrivacy.html"> Termos e Condições </a></li>
+                    <li><a href="accountPrivacy.html"> Acessibilidade </a></li>
+                    <li><a href="callCenter.html"> Contato </a></li>
+                </ul>
+                <h3> Copyright @2025 Samuel Miller Soares. Todos os direitos reservados </h3>
+            </section>
+        </footer>
+    </body>
+</html>
