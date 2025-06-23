@@ -3,43 +3,40 @@
     <head>
         <meta charset="UTF-8"/>
         <title> Virtuose - Produtos </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     </head>
-
     <body>
         <!-- Header -->
         <header class = "mainHeader">
             <!-- Aba de Navegação -->
             <nav class="navBar">
                 <ul class="conteiner">
-                    <li><a href="homePage.html"><img src="icons/logo.svg" class="logo" alt="Logo"/></a></li>               
+                    <li><a href="homePage.html"><img src="icons/logo.svg" class="logo" alt="Logo da Virtuose"/></a></li>
                     <li>
                         <form class="searchBar"> 
                             <input type="search" placeholder="Procurar"/>
-                            <a><img src="icons/navBarIcons/searchIcon.svg" alt="Ícone de pesquisa"></a>
+                            <a href="#"><img src="icons/navBarIcons/searchIcon.svg" alt="Ícone de pesquisa"/></a>
                         </form>
                     </li>
                     <li>
                         <ul class="navIcons">
-                            <li><a href=""><img src="icons/navBarIcons/infoIcon.svg" alt="Ícone de informação"/> Sobre Nós </a></li>
+                            <li><a href="aboutUs.html"><img src="icons/navBarIcons/infoIcon.svg" alt="Ícone de informação"/> Sobre Nós </a></li>
                             <li><a href="products.html"><img src="icons/navBarIcons/productsIcon.svg" alt="Ícone de produtos"/> Produtos </a></li>
                             <li><a href="cart.html"><img src="icons/navBarIcons/cartIcon.svg" alt="Ícone de carrinho"/> Carrinho </a></li>
-                            <li><a href="login.html"><img src="icons/navBarIcons/perfilIcon.svg" alt="Ícone de perfil"/> Sua conta </a></li>
+                            <li><a href="account.html"><img src="icons/navBarIcons/perfilIcon.svg" alt="Ícone de perfil"/> Sua conta </a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </header>
-
         <main class="mainProducts">
             <section class="sectionProduct">
                 <!-- Imagem do topo da tela -->
                 <img src="src/telaProdutos/banners/firstBanner.png" alt="Imagem para banner que consiste em um ukulele encima de um piano" class="banner"/>
-                
                 <nav class="breadCrumb">
                     <ul>
                         <li><a href="homePage.html"> Página Inicial </a></li>
@@ -48,577 +45,506 @@
                     </ul>
                 </nav>
                 <hr class="gapLine"/>
-
                 <!-- Mais vendidos -->
                 <section class="productSection">
                     <h2 class="sectionTitle"> Mais Vendidos </h2>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVendidos/baixoJaguar.png" alt="Baixo Jaguar" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Baixo Jaguar </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.622,62 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVendidos/violaoDreadnoughtMahogany.png" alt="Violão Mahogany" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Violão Mahogany </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 949,90 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVendidos/amplificadorContraBaixoMeteoro.png" alt="Amplificador Meteoro" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Amplificador Metero </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 497,36 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVendidos/contraBaixoTrbx174.png" alt="Contra Baixo Tbrx" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Contra Baixo Trbx </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.690,00 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVendidos/kitUkulele.png" alt="Kit Ukulele" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Kit Ukulele Iniciante </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 274,90 </p>
-                            </a>
-                        </article>                                    
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVendidos/baixoJaguar.png" alt="Baixo Jaguar" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Baixo Jaguar </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 1.622,62 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVendidos/violaoDreadnoughtMahogany.png" alt="Violão Mahogany" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Violão Mahogany </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 949,90 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVendidos/amplificadorContraBaixoMeteoro.png" alt="Amplificador Meteoro" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Amplificador Metero </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 497,36 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVendidos/contraBaixoTrbx174.png" alt="Contra Baixo Tbrx" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Contra Baixo Trbx </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 1.690,00 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVendidos/kitUkulele.png" alt="Kit Ukulele" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Kit Ukulele Iniciante </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 274,90 </p>
+                        </a>
                     </div>
                 </section>
                 <hr class="gapLine"/>
-
                 <!-- Lançamentos -->
                 <section class="productSection">
                     <h2 class="sectionTitle"> Lançamentos </h2>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/lancamentos/violaoFibraCarbono.png" alt="Violão Lava Me" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Violão Lava Me </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 4.999,00 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/lancamentos/bateriaDarhan.png" alt="Bateria Darhan" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Bateria Darhan </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.299,99 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/lancamentos/pandeiroLuen.png" alt="Pandeiro Luen" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Pandeiro Luen </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 63,90 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/lancamentos/baixoAmerican.png" alt="" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Baixo American Ultra </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 6.512,49 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/lancamentos/ArcodeãoThommasi.png" alt="Acordeão Thommasi" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Arcodeão Thommasi </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 3.500,00 </p>
-                            </a>
-                        </article>                                    
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/lancamentos/violaoFibraCarbono.png" alt="Violão Lava Me" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Violão Lava Me </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 4.999,00 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/lancamentos/bateriaDarhan.png" alt="Bateria Darhan" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Bateria Darhan </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 1.299,99 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/lancamentos/pandeiroLuen.png" alt="Pandeiro Luen" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Pandeiro Luen </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 63,90 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/lancamentos/baixoAmerican.png" alt="Baixo American Ultra" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Baixo American Ultra </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 6.512,49 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/lancamentos/ArcodeãoThommasi.png" alt="Acordeão Thommasi" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Arcodeão Thommasi </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 3.500,00 </p>
+                        </a>
                     </div>
                 </section>
                 <hr class="gapLine"/>
-
                 <!-- Mais vistos -->
                 <section class="productSection">
                     <h2 class="sectionTitle"> Mais Vistos </h2>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/tecladoYamaha.png" alt="Teclado Yamaha" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Teclado Yamaha </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.149,00 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/saxofoneHarmonics.png" alt="Saxofone Harmonics" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Saxofone Harmonics </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 2.740,00 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/caseGuitarraEyeglass.png" alt="Case Guitarra Eyeglass" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Case Eyeglass </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 677,97 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/ukuleleHarisson.png" alt="Ukulele Harisson" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Ukulele Harissonx </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 303,99 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/violaoFASteel.png" alt="Violão FA Stell" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Violão FA Steel </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 949,90 </p>
-                            </a>
-                        </article>                                    
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/tecladoYamaha.png" alt="Teclado Yamaha" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Teclado Yamaha </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 1.149,00 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/saxofoneHarmonics.png" alt="Saxofone Harmonics" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Saxofone Harmonics </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 2.740,00 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/caseGuitarraEyeglass.png" alt="Case Guitarra Eyeglass" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Case Eyeglass </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 677,97 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/ukuleleHarisson.png" alt="Ukulele Harisson" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Ukulele Harisson </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 303,99 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/violaoFASteel.png" alt="Violão FA Stell" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Violão FA Steel </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 949,90 </p>
+                        </a>
                     </div>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/kiGuitarraTagima.png" alt="Kit Guitarra Tagima" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Kit Guitarra Tagima </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.476,61 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/amplificadorKeeley.png" alt="Amplificador Keeley" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Amplificador Keeley </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 227,70 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/ViolonceloAL1212.png" alt="ViolonceloAL1212" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Violoncelo AL 1210 </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.560,00 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/encordoamentoViolaoGiannini.png" alt="Corda Violão" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Corda Violão Giannini </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 21,90 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/kitTecladoKobe.png" alt="Kit Teclado Kobe" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Kit Teclado Kobe </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 598,90 </p>
-                            </a>
-                        </article>                                    
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/kiGuitarraTagima.png" alt="Kit Guitarra Tagima" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Kit Guitarra Tagima </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 1.476,61 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/amplificadorKeeley.png" alt="Amplificador Keeley" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Amplificador Keeley </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 227,70 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/ViolonceloAL1212.png" alt="ViolonceloAL1212" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Violoncelo AL 1210 </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 1.560,00 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/encordoamentoViolaoGiannini.png" alt="Corda Violão" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Corda Violão Giannini </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 21,90 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/kitTecladoKobe.png" alt="Kit Teclado Kobe" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Kit Teclado Kobe </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 598,90 </p>
+                        </a>
                     </div>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/caboSomSantoAngelo.png" alt="Cabo Santo Angelo" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Cabo Santo Angelo </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 53,90 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/flautaDoceDolphin.png" alt="Flauta Doce Dolphin" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Flauta Doce Dolphin </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 34,90 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/guitarraTroublemaker.png" alt="Guitarra Troublemaker" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Guitarra Troublemaker </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 5.999,00 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/kitTrompeteVogga.png" alt="Kit Trompete Vogga" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Kit Trompete Vogga </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.121,00 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/capaViolaoHoltter.png" alt="Capa Violão Holtter" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Capa Violão Holtter </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 69,90 </p>
-                            </a>
-                        </article>                                    
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/caboSomSantoAngelo.png" alt="Cabo Santo Angelo" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Cabo Santo Angelo </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 53,90 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/flautaDoceDolphin.png" alt="Flauta Doce Dolphin" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Flauta Doce Dolphin </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 34,90 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/guitarraTroublemaker.png" alt="Guitarra Troublemaker" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Guitarra Troublemaker </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 5.999,00 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/kitTrompeteVogga.png" alt="Kit Trompete Vogga" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Kit Trompete Vogga </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 1.121,00 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/capaViolaoHoltter.png" alt="Capa Violão Holtter" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Capa Violão Holtter </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 69,90 </p>
+                        </a>
                     </div>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/pandeiroMeiaLua.png" alt="Pandeiro Meia Lua" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Pandeiro Meia Lua </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 29,99 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/tamborMadeiraBatuka.png" alt="Tambor Batuka" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Tambor Batuka </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 299,00 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/kitArpaAklot.png" alt="Kit Arpa" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Kit Arpa AKLOT </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 211,99 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/suportePartituraIbox.png" alt="Suporte Partitura Ibox" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Suporte Partitura </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 39,99 </p>
-                            </a>
-                        </article> 
-                        <article>
-                            <a href="product.html" class="productCard">
-                                <img src="src/telaProdutos/maisVistos/gaitaFender.png" alt="Gaita Fender" class="productImage"/>
-                                <hr class="gapLineProduct">
-                                <h3 class="productName"> Gaita Fender </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 144,00 </p>
-                            </a>
-                        </article>                                    
-                    </div>                         
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/pandeiroMeiaLua.png" alt="Pandeiro Meia Lua" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Pandeiro Meia Lua </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 29,99 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/tamborMadeiraBatuka.png" alt="Tambor Batuka" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Tambor Batuka </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 299,00 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/kitArpaAklot.png" alt="Kit Arpa" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Kit Arpa AKLOT </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 211,99 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/suportePartituraIbox.png" alt="Suporte Partitura Ibox" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Suporte Partitura </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 39,99 </p>
+                        </a>
+                        <a href="product01.html" class="productCard">
+                            <img src="src/telaProdutos/maisVistos/gaitaFender.png" alt="Gaita Fender" class="productImage"/>
+                            <hr class="gapLineProduct">
+                            <h3 class="productName"> Gaita Fender </h3>
+                            <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                            <p class="productsPrice"> R$ 144,00 </p>
+                        </a>
+                    </div>
                 </section>
-
                 <img src="src/telaProdutos/banners/secondBanner.png" alt="Imagem para banner que consiste em um grupo de instrumentos musicais" class="banner"/>
-                <h2 class="categoryTitle"> Categorias </h2>   
+                <h2 class="categoryTitle"> Exclusivos Virtuose </h2>
                 <hr class="gapLine"/>
-
                 <!-- Categoria Cordas -->
-                <section class="productSection">
+                <section class="productSection" id="strings">
                     <h2 class="sectionTitle"> Cordas </h2>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/cordas/banjoSierra.png" alt="Baixo Jaguar" class="productImage"/>
                                 <hr class="gapLineProduct">
                                 <h3 class="productName"> Baixo Jaguar </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.622,62 </p>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 789,20 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProduto01/violaoFrente.png" alt="California Vintage" class="productImage"/>
                                 <hr class="gapLineProduct">
                                 <h3 class="productName"> Violão Mahogany </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 949,90 </p>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 867,90 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product02.html" class="productCard">
+                                <img src="src/telaProduto02/baixoFrente.png" alt="Baixo American Ultra II " class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Amplificador Metero </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 497,36 </p>
+                                <h3 class="productName"> Baixo American Ultra II  </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> RR$ 1.090,90 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/cordas/cavaquinhoRC10.png" alt="Cavaquinho RC-10" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> ContraBaixo Trbx </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.690,00 </p>
+                                <h3 class="productName"> Cavaquinho RC-10 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> $ 735,00 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product03.html" class="productCard">
+                                <img src="src/telaProduto03/ukuleleFrente.png" alt="Ukulele Venice" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Baixo Jaguar </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 274,90 </p>
+                                <h3 class="productName"> Ukulele Venice </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 587,00 </p>
                             </a>
-                        </article>                                    
+                        </article>
                     </div>
                 </section>
                 <hr class="gapLine"/>
-
                 <!-- Categoria Teclados -->
-                <section class="productSection">
+                <section class="productSection" id="keyboards">
                     <h2 class="sectionTitle"> Teclados </h2>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/teclados/tecladoE-X10.png" alt="Teclado E-X10" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Violão Lava Me </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 4.999,00 </p>
+                                <h3 class="productName"> Teclado E-X10 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 1.290,90 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/teclados/pianoGP-9-PE.png" alt="Piano GP-9-PE" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Bateria Darhan </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.299,99 </p>
+                                <h3 class="productName"> Piano GP-9-PE </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 62.269,10 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/teclados/tecladoInfantilSA-50.png" alt="Teclado Infantil SA-50" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Pandeiro Luen </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 63,90 </p>
+                                <h3 class="productName"> Teclado Infantil SA-50 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 456,89 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/teclados/tecladoIV-88.png" alt="Teclado IV-88" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Baixo American Ultra </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 6.512,49 </p>
+                                <h3 class="productName"> Teclado IV-88 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 526,49 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/teclados/pianoDigitalPX-890.png" alt="Piano Digital PX-890" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Arcodeão Thommasi </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 3.500,00 </p>
+                                <h3 class="productName"> Piano Digital PX-890 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 3.400,90 </p>
                             </a>
-                        </article>                                    
+                        </article>
                     </div>
                 </section>
                 <hr class="gapLine"/>
-
                 <!-- Categoria Eletrônicos -->
-                <section class="productSection">
+                <section class="productSection" id="eletronics">
                     <h2 class="sectionTitle"> Eletrônicos </h2>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/eletronicos/microfoneSM58.png" alt="Microfone SM58" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Violão Lava Me </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 4.999,00 </p>
+                                <h3 class="productName"> Microfone SM58 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 41,60 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/eletronicos/amplificadorFR-12.png" alt="Amplificador FR-12" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Bateria Darhan </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.299,99 </p>
+                                <h3 class="productName"> Amplificador FR-12 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 3.409,00 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/eletronicos/caboTweed.png" alt="Cabo Tweed" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Pandeiro Luen </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 63,90 </p>
+                                <h3 class="productName"> Cabo Tweed </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 154,99 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/eletronicos/sintentizadorPX-94.png" alt="Sintentizador PX-94" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Baixo American Ultra </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 6.512,49 </p>
+                                <h3 class="productName"> Sintentizador PX-94 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 802,49 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/eletronicos/bateriaEletronica.png" alt="Bateria Eletrônica DED" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Arcodeão Thommasi </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 3.500,00 </p>
+                                <h3 class="productName"> Bateria Eletrônica DED </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 732,90 </p>
                             </a>
-                        </article>                                    
+                        </article>
                     </div>
                 </section>
                 <hr class="gapLine"/>
-
                 <!-- Categoria Percussão -->
-                <section class="productSection">
+                <section class="productSection" id="percussion">
                     <h2 class="sectionTitle"> Percussão </h2>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/percussao/pandeiroABS-10.png" alt="Pandeiro ABS-10" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Violão Lava Me </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 4.999,00 </p>
+                                <h3 class="productName"> Pandeiro ABS-10 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 109,90 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/percussao/bateriaImperialstar.png" alt="Baterial Imperial Star" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Bateria Darhan </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.299,99 </p>
+                                <h3 class="productName"> Baterial Imperial Star </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 4.947,90 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/percussao/xilofoneD-19.png" alt="Xilofone D-19" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Pandeiro Luen </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 63,90 </p>
+                                <h3 class="productName"> Xilofone D-19 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 229,90 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/percussao/kitPratoBaixoVolume.png" alt="Kit Prato Low Volume" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Baixo American Ultra </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 6.512,49 </p>
+                                <h3 class="productName"> Kit Prato Low Volume </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 486,90 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/percussao/timbaS-42.png" alt="" class="productImage"/>
                                 <hr class="gapLineProduct">
                                 <h3 class="productName"> Arcodeão Thommasi </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 3.500,00 </p>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 359,00 </p>
                             </a>
-                        </article>                                    
+                        </article>
                     </div>
                 </section>
                 <hr class="gapLine"/>
-
                 <!-- Categoria Sopro -->
-                <section class="productSection">
+                <section class="productSection" id="blow">
                     <h2 class="sectionTitle"> Sopro </h2>
                     <div class ="productGrid"> <!-- "div" utilizada para permitir o separamentos dos cards de produtos e o título além de permitir seu poscionamento adequado -->
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/sopro/escaletaGI-12.png" alt="Escaleta GI-12" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Violão Lava Me </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 4.999,00 </p>
+                                <h3 class="productName"> Escaleta GI-12 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 119,99 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/sopro/flautaC-200.png" alt="Flauta C-200" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Bateria Darhan </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 1.299,99 </p>
+                                <h3 class="productName"> Flauta C-200 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 629,90 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/sopro/saxofoneYTP.png" alt="Saxofone YTP" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Pandeiro Luen </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 63,90 </p>
+                                <h3 class="productName"> Saxofone YTP </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 1.089,10 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/sopro/gaitaG-70.png" alt="Gaita G-70" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Baixo American Ultra </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 6.512,49 </p>
+                                <h3 class="productName"> Gaita G-70 </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 198,14 </p>
                             </a>
-                        </article> 
+                        </article>
                         <article>
-                            <a href="product.html" class="productCard">
-                                <img src="" alt="" class="productImage"/>
+                            <a href="product01.html" class="productCard">
+                                <img src="src/telaProdutos/sopro/bombardinoYEP-201.png" alt="Kit Bombardino" class="productImage"/>
                                 <hr class="gapLineProduct">
-                                <h3 class="productName"> Arcodeão Thommasi </h3>
-                                <img src="icons/starsIcons/5stars.svg" class="star"/>
-                                <p class="productsPrice"> R$ 3.500,00 </p>
+                                <h3 class="productName"> Kit Bombardino </h3>
+                                <img src="icons/starsIcons/5stars.svg" class="star" alt="Ícone de avaliação"/>
+                                <p class="productsPrice"> R$ 3.298,90 </p>
                             </a>
-                        </article>                                    
+                        </article>
                     </div>
                 </section>
-                <hr class="gapLine"/>
             </section>
         </main>
-
         <!-- Footer -->
         <footer class="footer">
             <section class = "newsLetter">
@@ -626,28 +552,28 @@
                 <p> Insira seu email abaixo e seja o primeiro a receber as promoções da Virtuose </p>
                 <form class="formNewsLetter">
                     <input type="email" placeholder="Insira seu email"/>
-                    <a><img src="icons/footerIcons/arrowIcon.svg" alt="Seta para direita"/></a>
+                    <a href="callCenter.html"><img src="icons/footerIcons/arrowIcon.svg" alt="Seta para direita"/></a>
                 </form>
             </section>
             <hr class="footerLine"/>
             <div class = "linksFooter"> <!-- "div" utilizada para definir e delimitar o espaço dos links no footer -->
-                <article class = "links">
+                <article class = "links"> <!-- Links do footer, o usuário pode navegar para certas páginas através deles -->
                     <h4> Produtos </h4>
                     <div class = "productsLinks"> <!-- "div" utilizada para separar a lista em dois espaços diferentes-->
                         <div> <!-- "div" usada para alinhamento -->
                             <ul>
-                                <li><a href="#"> Violões </a></li>
-                                <li><a href="#"> Guitarras </a></li>
-                                <li><a href="#"> Baixos </a></li>
-                                <li><a href="#"> Ukuleles </a></li>
+                                <li><a href="products.html"> Violões </a></li>
+                                <li><a href="products.html"> Guitarras </a></li>
+                                <li><a href="products.html"> Baixos </a></li>
+                                <li><a href="products.html"> Ukuleles </a></li>
                             </ul>
                         </div>
                         <div> <!-- "div" usada para alinhamento -->
-                            <ul>    
-                                <li><a href="#"> Baterias </a></li>
-                                <li><a href="#"> Violinos </a></li>
-                                <li><a href="#"> Teclados </a></li>
-                                <li><a href="#"> Acessórios </a></li>
+                            <ul>
+                                <li><a href="products.html"> Baterias </a></li>
+                                <li><a href="products.html"> Violinos </a></li>
+                                <li><a href="products.html"> Teclados </a></li>
+                                <li><a href="products.html"> Acessórios </a></li>
                             </ul>
                         </div>
                     </div>
@@ -655,27 +581,26 @@
                 <article class = "links">
                     <h4> Institucional </h4>
                     <ul>
-                        <li><a href="#"> Sobre nós </a></li>
-                        <li><a href="#"> Fale conosco </a></li>
-                        <li><a href="#"> Dúvidas </a></li>
-                        <li><a href="#"> Politica de privacidade </a></li>
+                        <li><a href="aboutUs.html"> Sobre nós </a></li>
+                        <li><a href="callCenter.html"> Fale conosco </a></li>
+                        <li><a href="callCenter.html"> Dúvidas </a></li>
                     </ul>
                 </article>
                 <article class = "links">
                     <h4> Conta </h4>
                     <ul>
-                        <li><a href="#"> Minha conta </a></li>
-                        <li><a href="#"> Pedidos </a></li>
+                        <li><a href="account.html"> Minha conta </a></li>
+                        <li><a href="accountOrders.html"> Pedidos </a></li>
                     </ul>
                 </article>
             </div>
             <hr class="footerLine"/>
             <section class="copyright">
                 <ul>
-                    <li><a href="#"> Política de Privacidade </a></li>
-                    <li><a href="#"> Termos e Condições </a></li>
-                    <li><a href="#"> Acessibilidade </a></li>
-                    <li><a href="#"> Contato </a></li>
+                    <li><a href="accountPrivacy.html"> Política de Privacidade </a></li>
+                    <li><a href="accountPrivacy.html"> Termos e Condições </a></li>
+                    <li><a href="accountPrivacy.html"> Acessibilidade </a></li>
+                    <li><a href="callCenter.html"> Contato </a></li>
                 </ul>
                 <h3> Copyright @2025 Samuel Miller Soares. Todos os direitos reservados </h3>
             </section>
